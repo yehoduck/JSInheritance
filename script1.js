@@ -22,4 +22,11 @@ class DiscountedProduct extends FoodProduct {
         this.maxDiscountLimit = maxDiscountLimit;
         this.currentDiscount = 0;
     }
+    applyDiscount(percent) {
+        if (percent >= 0 && percent <= this.maxDiscountLimit) {
+            this.currentDiscount = percent;
+            return true;
+        }
+    return false
+    }
 }
