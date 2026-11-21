@@ -5,4 +5,8 @@ class FoodProduct {
         this.brand = brand;
         this.manufactureDate = new Date(manufactureDate);
     }
+    get ageInDays() {
+        const difference = new Date() - this.manufactureDate; 
+        return Math.floor(difference / (1000 * 60 * 60 * 24));
+    }
 }
