@@ -9,4 +9,10 @@ class FoodProduct {
         const difference = new Date() - this.manufactureDate; 
         return Math.floor(difference / (1000 * 60 * 60 * 24));
     }
+    getFullInfo() {
+        return `Назва: ${this.title},
+        Категорія: ${this.category},
+        Бренд: ${this.brand},
+        Вік товару: ${this.ageInDays} днів`;
+    }
 }
