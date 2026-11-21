@@ -16,3 +16,10 @@ class FoodProduct {
         Вік товару: ${this.ageInDays} днів`;
     }
 }
+class DiscountedProduct extends FoodProduct {
+    constructor(title, category, brand, manufactureDate, maxDiscountLimit) {
+        super(title, category, brand, manufactureDate);
+        this.maxDiscountLimit = maxDiscountLimit;
+        this.currentDiscount = 0;
+    }
+}
