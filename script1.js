@@ -27,6 +27,11 @@ class DiscountedProduct extends FoodProduct {
             this.currentDiscount = percent;
             return true;
         }
-    return false
+        return false
+    }
+    getFullInfo() {
+        return `${super.getFullInfo()},
+        Поточна знижка: ${this.currentDiscount}%,
+        Максимальна знижка: ${this.maxDiscountLimit}%`;
     }
 }
