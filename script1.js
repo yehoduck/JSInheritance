@@ -35,3 +35,16 @@ class DiscountedProduct extends FoodProduct {
         Максимальна знижка: ${this.maxDiscountLimit}%`;
     }
 }
+const milk = new FoodProduct(
+    "Молоко 2.5%",
+    "Молочка",
+    "Яготинське",
+    new Date("2026-11-15")
+);
+const cake = new DiscountedProduct(
+    "Торт Світоч",
+    "Випічка",
+    "Світоч",
+    new Date("2026-11-17"),
+    50
+);
